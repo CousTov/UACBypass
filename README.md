@@ -4,7 +4,7 @@
 This repository contains a PowerShell script that demonstrates a UAC (User Account Control) bypass using **Fodhelper.exe**, a trusted binary in Windows operating systems. By exploiting a feature of Fodhelper.exe, we can elevate privileges without triggering the typical UAC prompt, allowing for seamless execution of elevated commands.
 
 ### What is Fodhelper.exe?
-**Fodhelper.exe** is a trusted system binary found in Windows operating systems, specifically designed for managing system settings. By default, this executable has administrative privileges and is considered a "trusted binary" in Windows. As a result, **Fodhelper.exe** can be leveraged to gain administrative rights without triggering the standard UAC prompt that usually appears when attempting to run applications as an administrator.
+**Fodhelper.exe** is a trusted system binary found in Windows operating systems. By default, this executable has administrative privileges and is considered a "trusted binary" in Windows. As a result, **Fodhelper.exe** can be leveraged to gain administrative rights without triggering the standard UAC prompt that usually appears when attempting to run applications as an administrator.
 
 In simpler terms, when running an application that requires administrative privileges, Windows typically prompts the user to confirm the action (UAC prompt). However, **Fodhelper.exe** bypasses this step, allowing for elevated privileges without user intervention. This behavior is a Windows-specific feature that can be exploited through registry manipulation to stealthily execute commands with administrative rights.
 
@@ -25,12 +25,11 @@ This script and method are shared for educational purposes only. Misuse of this 
 
 ### Prerequisites
 - A Windows operating system with UAC enabled (the method works by exploiting **Fodhelper.exe**'s behavior in these environments).
-- Administrative privileges are needed to manipulate the system registry.
 - PowerShell is required for executing the script.
 
 ### Running the Script
 1. Download or clone the repository.
-2. Open a PowerShell session with administrative privileges.
+2. Open a PowerShell session with out administrative privileges.
 3. Navigate to the directory where the script is located.
 4. Execute the PowerShell script using the following command:
    ```powershell
