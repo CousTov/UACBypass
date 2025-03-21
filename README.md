@@ -9,7 +9,7 @@ This repository contains a PowerShell script that demonstrates a UAC (User Accou
 In simpler terms, when running an application that requires administrative privileges, Windows typically prompts the user to confirm the action (UAC prompt). However, **Fodhelper.exe** bypasses this step, allowing for elevated privileges without user intervention. This behavior is a Windows-specific feature that can be exploited through registry manipulation to stealthily execute commands with administrative rights.
 
 ### How Does it Work?
-The process involves manipulating registry entries related to **Fodhelper.exe** to invoke the binary along with powershell. Since the binary -- parent -- has administrative privileges by default, powershell -- child -- also will have the same privileges. Once triggered, **Fodhelper.exe** will execute the designated commands set on registry; in this case, running PowerShell with some command.
+The process involves manipulating registry entries related to **Fodhelper.exe** to invoke the binary along with powershell. Since the binary -- parent -- has administrative privileges by default, powershell -- child -- also will have the same privileges. Once triggered, **Fodhelper.exe** will execute the designated commands set on registry.
 
 This technique allows for the execution of commands or scripts that would typically require UAC confirmation, bypassing the prompt altogether. It can be used for automation or stealthy privilege escalation purposes.
 
